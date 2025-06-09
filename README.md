@@ -43,6 +43,22 @@ The main application files are located within the `site/` directory:
     - `js/glossary-links.js`: Provides the global `window.applyGlossaryTooltips` function for adding interactive glossary term definitions.
 - Ensure consistency in URL hash strings (e.g., `#key-provisions` vs. `#key_provisions`) across routing definitions, link generation, and conditional script execution.
 
+## Recent Accomplishments (June 2025)
+
+- **Key Provisions Page Enhancements:**
+  - Replaced the static Mermaid diagram for "Applicable Percentage Points" with a dynamic Chart.js bar chart.
+  - Restructured `key_provisions.json` to support deeply nested content (paragraphs, charts, tables) using `sub_content` arrays.
+  - Updated `key_provisions.js` rendering logic to be fully recursive, ensuring correct display of all nested content.
+  - Adjusted Chart.js chart container styles for better visual sizing.
+  - Reorganized sections: Added "2.6 Carve-Outs and Exceptions," moved "Safe Harbor & Transition Relief" content, and renumbered subsequent sections.
+  - Fixed various JSON syntax errors and restored the "Am I an Applicable Person?" Mermaid flowchart to "2.7 Decision Tools."
+
+- **Impact Estimator Flowchart Implementation:**
+  - Created `site/data/impact_estimator.json` for flowchart data (title, intro, Mermaid code).
+  - Developed `site/js/impact_estimator.js` to fetch JSON, render the flowchart page, and initialize the Mermaid diagram.
+  - Integrated the new page into the site navigation via `navigation.js` and `index.html`.
+  - Currently addressing an issue where the flowchart page (`#impact-estimator`) was conflicting with a pre-existing calculator on the same route. Work is in progress to separate these into distinct pages/routes.
+
 ## Contributing
 
 (To be defined - for now, focus on local development and testing.)

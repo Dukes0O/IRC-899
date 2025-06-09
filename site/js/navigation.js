@@ -103,6 +103,15 @@ const Navigation = (() => {
             } else {
                 console.error('NAVIGATION.JS: LegislationPage or LegislationPage.init is not defined for #legislation.');
             }
+        } else if (hash === '#impact-estimator') {
+            console.log('NAVIGATION.JS: Matched #impact-estimator.');
+            // Assuming impact_estimator.js exposes its init function on window.pageScripts.impact_estimator
+            if (window.pageScripts && window.pageScripts.impact_estimator) {
+                console.log('NAVIGATION.JS: Calling pageScripts.impact_estimator() for #impact-estimator');
+                window.pageScripts.impact_estimator();
+            } else {
+                console.error('NAVIGATION.JS: pageScripts.impact_estimator is not defined for #impact-estimator. Ensure impact_estimator.js is loaded and exposes its init function correctly.');
+            }
         } else if (hash === '#key-provisions') { // Corrected from underscore to hyphen
             console.log('NAVIGATION.JS: Matched #key-provisions. Evaluating KeyProvisionsPage...');
             console.log('NAVIGATION.JS: typeof KeyProvisionsPage is:', typeof KeyProvisionsPage);

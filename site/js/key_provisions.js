@@ -27,6 +27,17 @@ let KeyProvisionsPage;
         tryFetch(possiblePaths)
             .then(data => {
                 renderKeyProvisions(data, contentDiv);
+
+                // Initialize Charts Recursively
+                if (typeof Chart !== 'undefined' && data.sections) {
+                    console.log('KEY_PROVISIONS.JS: Starting recursive chart initialization.');
+                    data.sections.forEach(section => {
+                        if (section.content && Array.isArray(section.content)) {
+                            initializeChartsRecursive(section.content);
+                        }
+                    });
+                }
+
                 // Initialize Mermaid if it's loaded and there's Mermaid code
                 if (typeof mermaid !== 'undefined' && data.sections && data.sections.some(s => s.content.some(c => c.type === 'tool_item' && c.mermaid_code))) {
                     console.log('KEY_PROVISIONS.JS: Initializing Mermaid charts.');
@@ -107,65 +118,10 @@ let KeyProvisionsPage;
                            <h2>${section.title}</h2>`;
                 if (section.content && Array.isArray(section.content)) {
                     section.content.forEach(item => {
-                        switch (item.type) {
-                            case 'paragraph':
-                                html += `<p>${item.text}</p>`;
-                                break;
-                            case 'definition_item':
-                                html += `<div class="definition-item">
-                                           <h3>${item.term}</h3>
-                                           <p>${item.definition}</p>`;
-                                if (item.points && Array.isArray(item.points)) {
-                                    html += '<ul>';
-                                    item.points.forEach(point => {
-                                        html += `<li>${point}</li>`;
-                                    });
-                                    html += '</ul>';
-                                }
-                                html += '</div>';
-                                break;
-                            case 'list':
-                                if (item.items && Array.isArray(item.items)) {
-                                    html += '<ul>';
-                                    item.items.forEach(listItem => {
-                                        html += `<li>${listItem}</li>`;
-                                    });
-                                    html += '</ul>';
-                                }
-                                break;
-                            case 'nested_list':
-                                if (item.items && Array.isArray(item.items)) {
-                                    html += '<ul>';
-                                    item.items.forEach(listItem => {
-                                        html += `<li>${listItem.text}`;
-                                        if (listItem.sub_items && Array.isArray(listItem.sub_items)) {
-                                            html += '<ul>';
-                                            listItem.sub_items.forEach(subItem => {
-                                                html += `<li>${subItem}</li>`;
-                                            });
-                                            html += '</ul>';
-                                        }
-                                        html += '</li>';
-                                    });
-                                    html += '</ul>';
-                                }
-                                break;
-                            case 'tool_item': // For Mermaid diagrams
-                                html += `<div>
-                                           <h4>${item.title}</h4>
-                                           <p>${item.description}</p>
-                                           <pre class="mermaid">${item.mermaid_code}</pre>
-                                         </div>`;
-                                break;
-                            case 'placeholder_item':
-                                html += `<div>${item.text}</div>`;
-                                break;
-                            default:
-                                console.warn(`KEY_PROVISIONS.JS: Unknown content type: ${item.type}`);
-                        }
+                        html += renderContentItem(item);
                     });
                 }
-                html += '</section>';
+                html += '</section>'; // Close section tag
             });
         }
 
@@ -176,6 +132,153 @@ let KeyProvisionsPage;
         container.innerHTML = html;
         console.log('KEY_PROVISIONS.JS: Key provisions content rendered.');
     };
+
+    function initializeChartsRecursive(items) {
+        if (!items || !Array.isArray(items)) return;
+
+        items.forEach(item => {
+            if (item.type === 'chart' && item.chart_id && item.data && item.options) {
+                const chartCanvas = document.getElementById(item.chart_id);
+                if (chartCanvas) {
+                    try {
+                        new Chart(chartCanvas, {
+                            type: item.chart_type || 'bar',
+                            data: item.data,
+                            options: item.options
+                        });
+                        console.log(`KEY_PROVISIONS.JS: Chart '${item.chart_id}' initialized recursively.`);
+                    } catch (e) {
+                        console.error(`KEY_PROVISIONS.JS: Error initializing chart '${item.chart_id}' recursively:`, e);
+                        const chartContainer = chartCanvas.parentElement;
+                        if (chartContainer) {
+                            chartContainer.innerHTML = `<p class="error-message">Error rendering chart '${item.title || item.chart_id}'. Details in console.</p>`;
+                        }
+                    }
+                } else {
+                    console.warn(`KEY_PROVISIONS.JS: Canvas element with ID '${item.chart_id}' not found for recursive chart rendering.`);
+                }
+            } else if (item.type === 'nested_list' && item.items && Array.isArray(item.items)) {
+                item.items.forEach(li_item => {
+                    if (li_item.sub_content && Array.isArray(li_item.sub_content)) {
+                        initializeChartsRecursive(li_item.sub_content);
+                    }
+                });
+            }
+            // Add other container types if charts can be nested in them, e.g., if a 'card' or 'accordion' type could contain charts.
+        });
+    }
+
+    function renderContentItem(item) {
+        let html = '';
+        if (!item || !item.type) {
+            console.warn('KEY_PROVISIONS.JS: Invalid item for renderContentItem:', item);
+            return '<p class="error-message">Invalid content item data.</p>';
+        }
+
+        switch (item.type) {
+            case 'paragraph':
+                html += `<p>${item.text}</p>`;
+                break;
+            case 'list':
+                if (item.items && Array.isArray(item.items)) {
+                    html += '<ul>';
+                    item.items.forEach(li => {
+                        html += `<li>${li}</li>`;
+                    });
+                    html += '</ul>';
+                }
+                break;
+            case 'definition_item':
+                html += `<div class="definition-item">
+                           <h4>${item.term}</h4>
+                           <p>${item.definition}</p>`;
+                if (item.points && Array.isArray(item.points)) {
+                    html += '<ul>';
+                    item.points.forEach(point => {
+                        html += `<li>${point}</li>`;
+                    });
+                    html += '</ul>';
+                }
+                html += '</div>';
+                break;
+            case 'nested_list':
+                if (item.items && Array.isArray(item.items)) {
+                    html += '<ul>';
+                    item.items.forEach(li_item => {
+                        html += `<li>${li_item.text || ''}`;
+                        if (li_item.sub_items && Array.isArray(li_item.sub_items)) {
+                            html += '<ul>';
+                            li_item.sub_items.forEach(sub_li => {
+                                html += `<li>${sub_li}</li>`;
+                            });
+                            html += '</ul>';
+                        }
+                        if (li_item.sub_content && Array.isArray(li_item.sub_content)) {
+                            // Render complex sub-content recursively
+                            li_item.sub_content.forEach(sub_content_item => {
+                                html += renderContentItem(sub_content_item);
+                            });
+                        }
+                        html += '</li>';
+                    });
+                    html += '</ul>';
+                }
+                break;
+            case 'tool_item': // For Mermaid diagrams or other tools
+                if (item.mermaid_code) {
+                    html += `<h4>${item.title || 'Diagram'}</h4>`;
+                    if (item.description) {
+                        html += `<p>${item.description}</p>`;
+                    }
+                    html += `<div class="mermaid-container"><pre class="mermaid">${item.mermaid_code}</pre></div>`;
+                } else {
+                    html += `<p class="error-message">Tool item '${item.title}' is missing its content (e.g., mermaid_code).</p>`;
+                    console.warn('KEY_PROVISIONS.JS: Tool item missing mermaid_code:', item);
+                }
+                break;
+            case 'table':
+                if (item.headers && item.rows) {
+                    html += '<div class="table-responsive"><table class="table table-bordered table-striped"><thead><tr>';
+                    item.headers.forEach(header => {
+                        html += `<th>${header}</th>`;
+                    });
+                    html += '</tr></thead><tbody>';
+                    item.rows.forEach(row => {
+                        html += '<tr>';
+                        row.forEach(cell => {
+                            html += `<td>${cell}</td>`;
+                        });
+                        html += '</tr>';
+                    });
+                    html += '</tbody></table></div>';
+                } else {
+                    html += `<p class="error-message">Table '${item.title || 'Untitled'}' could not be rendered. Missing headers or rows.</p>`;
+                    console.warn('KEY_PROVISIONS.JS: Invalid table data - missing headers or rows');
+                }
+                break;
+            case 'chart':
+                if (item.chart_id && item.data && item.options && typeof Chart !== 'undefined') {
+                    html += `<div>
+                               <h4>${item.title || 'Chart'}</h4>
+                               <p>${item.description || ''}</p>
+                               <div class="chart-container" style="position: relative; height:300px; width:90%; max-width: 600px; margin: 20px auto;">
+                             <canvas id="${item.chart_id}"></canvas>
+                           </div>
+                             </div>`;
+                } else {
+                    html += `<p class="error-message">Chart '${item.title || item.chart_id}' could not be rendered. Missing data, ID, options, or Chart.js library.</p>`;
+                    console.warn('KEY_PROVISIONS.JS: Invalid chart data - missing chart_id, data, options, or Chart.js library not loaded for item:', item);
+                }
+                break;
+            case 'placeholder_item': // Added to handle placeholder items if any
+                 html += `<div>${item.text || 'Placeholder'}</div>`;
+                 break;
+            default:
+                console.warn(`KEY_PROVISIONS.JS: Unknown content type: ${item.type}`);
+                html += `<p class="error-message">Unknown content type: ${item.type}</p>`;
+        }
+        return html;
+    }
 
     // Assign the fully built module to the global KeyProvisionsPage variable
     KeyProvisionsPage = module;

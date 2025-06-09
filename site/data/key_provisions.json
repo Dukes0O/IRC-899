@@ -8,11 +8,46 @@
       "content": [
         {
           "type": "paragraph",
-          "text": "<strong>Legislative Purpose:</strong> To counteract unfair foreign tax practices that distort international trade and harm U.S. economic interests by imposing targeted tax adjustments."
+          "text": "<strong>Legislative Purpose:</strong> Section 899 is a newly proposed \"retaliatory\" code section that installs 3 levers of taxation on the U.S. side of the system to tax marginal flows and base eroding deductions that cross the U.S. border meant to target countries that have imposed 'unfair' taxes that harm U.S economic interests."
         },
         {
           "type": "paragraph",
-          "text": "<strong>Effective Dates:</strong> (Placeholder: Specify effective dates as per hypothetical legislation - e.g., Applicable to tax years beginning after December 31, 2024)."
+          "text": "<strong>Effective Dates:</strong> Section 899's effective dates are designed with a structured phase-in to capture both non-withholding and withholding taxes, depending on when the legislation is enacted and the relevant country is designated as discriminatory by Treasury."
+        },
+        {
+          "type": "table",
+          "headers": ["Event", "Date Estimate", "Description"],
+          "rows": [
+            [
+              "Senate Passage and Enactment",
+              "July 2025 (assumed)",
+              "Date the legislation is passed by Congress and signed into law by the President."
+            ],
+            [
+              "90-Day Enactment Buffer Ends",
+              "October 2025",
+              "The earliest point at which tax years can begin to be subject to Section 899 surcharges."
+            ],
+            [
+              "First Taxable Year Subject (Non-Withholding Taxes)",
+              "January 1, 2026",
+              "For taxpayers with a December 31 year-end, the 2026 tax year is the first full year subject to the § 899 non-withholding surcharges (e.g., BEAT, 1120-F)."
+            ],
+            [
+              "First Calendar Year Subject (Withholding Taxes)",
+              "January 1, 2026",
+              "Withholding surcharges on dividends, royalties, interest, and FIRPTA payments will apply starting with the 2026 calendar year."
+            ],
+            [
+              "Surcharge Ramp-Up Begins",
+              "2026",
+              "+5 percentage point surcharge applies in the first year; +5 pp added each subsequent year, capped at +20 percentage points."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Thus, assuming prompt enactment in mid-2025, taxpayers with a December 31 year-end will see Section 899 surcharges begin with the 2026 tax and calendar years. Fiscal year-end taxpayers could face slightly different timing depending on when their fiscal year begins relative to the 90-day post-enactment buffer."
         },
         {
           "type": "paragraph",
@@ -27,31 +62,28 @@
         {
           "type": "definition_item",
           "term": "Applicable Person",
-          "definition": "Refers to entities subject to the provisions of Section 899. This broadly includes:",
-          "points": [
-            "Foreign governments imposing or benefiting from the unfair tax.",
-            "Foreign individuals or corporations making payments subject to an unfair foreign tax or receiving benefits from such tax regimes.",
-            "Other entities as specified by Treasury regulations."
-          ]
+          "definition": "Any non-U.S. individual, foreign corporation, government, private foundation, trust, partnership, branch, or other entity that is resident in—or more than 50% owned or controlled (vote or value) by residents of—a country designated as 'discriminatory' under §899(b)(1)."
         },
         {
           "type": "definition_item",
           "term": "Discriminatory Foreign Country",
-          "definition": "A country formally designated by the U.S. Treasury as maintaining one or more 'unfair foreign taxes'.",
+          "definition": "A jurisdiction that imposes one or more 'unfair foreign taxes' and is listed by Treasury in quarterly guidance under §899(e)(2). Examples include those that have enacted per se unfair taxes (DSTs, UTPRs, DPTs) without cost-recovery or that apply extraterritorially."
+        },
+        {
+          "type": "definition_item",
+          "term": "Unfair Foreign Tax",
+          "definition": "As defined in §899(c)(1), any of:",
           "points": [
-            "<strong>Criteria for Designation:</strong> Based on specific characteristics of the foreign tax law, its extraterritorial application, or its discriminatory effect on U.S. businesses.",
-            "<strong>List of Current Countries:</strong> (Placeholder: e.g., As of June 2025: Country X, Country Y. This list would be updated quarterly by Treasury.)"
+            "An OECD Pillar 2 Undertaxed Profits Rule (UTPR)",
+            "A Digital Services Tax (DST) on nonresident tech-company revenues",
+            "A Diverted Profits Tax (DPT) targeting profit shifting",
+            "Any extraterritorial or discriminatory tax (e.g., gross basis, non-net-income, or special-exemption taxes) that falls within Treasury's delegated authority"
           ]
         },
         {
           "type": "definition_item",
-          "term": "Unfair Foreign Taxes",
-          "definition": "Taxes identified by Section 899 or designated by Treasury, including but not limited to:",
-          "points": [
-            "Digital Services Taxes (DSTs) that are discriminatory.",
-            "Diverted Profits Taxes (DPTs) that target U.S. multinationals unfairly.",
-            "Other taxes deemed to have an adverse impact on U.S. trade or tax revenues due to their design or application."
-          ]
+          "term": "Applicable Date",
+          "definition": "The first day of the first calendar year after the latest of (i) 90 days post-enactment of §899, (ii) 180 days after the unfair foreign tax's enactment, or (iii) when that tax first applies. Surcharges are computed relative to this date."
         }
       ]
     },
@@ -111,29 +143,116 @@
               ]
             },
             {
-              "text": "<strong>Applicable Percentage-Point Ramp-Up (&sect;899(a)(4) - hypothetical):</strong>",
-              "sub_items": [
-                "A gradual increase in the surcharge or tax adjustment (e.g., +5 percentage points in year 1, +5 pp each subsequent anniversary, up to a 20 pp cap).",
-                "Weighted-average rules for fiscal years that span a rate change."
+              "text": "<strong>Applicable Percentage Points</strong>",
+              "sub_content": [
+                {
+                  "type": "paragraph",
+                  "text": "Section 899 imposes a gradually increasing surcharge on U.S. taxes paid by applicable persons. The surcharge starts at +5 percentage points in the first year after a country's applicable date and increases by +5 percentage points on each annual anniversary, up to a maximum of +20 percentage points."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "The surcharge is calculated based on the number of full years that have elapsed since the applicable date. For fiscal years that span a rate change, weighted-average rules apply."
+                },
+                {
+                  "type": "chart",
+                  "chart_id": "surchargeRampUpChart",
+                  "title": "Surcharge Ramp-Up Over Time",
+                  "description": "The following chart illustrates how the surcharge increases over time:",
+                  "chart_type": "bar",
+                  "data": {
+                    "labels": ["Year 0", "Year 1", "Year 2", "Year 3", "Year 4+"],
+                    "datasets": [{
+                      "label": "Cumulative Surcharge (%)",
+                      "data": [0, 5, 10, 15, 20],
+                      "backgroundColor": [
+                        "rgba(201, 203, 207, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(255, 99, 132, 0.2)"
+                      ],
+                      "borderColor": [
+                        "rgb(201, 203, 207)",
+                        "rgb(54, 162, 235)",
+                        "rgb(54, 162, 235)",
+                        "rgb(54, 162, 235)",
+                        "rgb(255, 99, 132)"
+                      ],
+                      "borderWidth": 1
+                    }]
+                  },
+                  "options": {
+                    "scales": {
+                      "y": {
+                        "beginAtZero": true,
+                        "max": 25,
+                        "title": {
+                          "display": true,
+                          "text": "Percentage Points"
+                        }
+                      }
+                    },
+                    "responsive": true,
+                    "maintainAspectRatio": false
+                  }
+                },
+                {
+                  "type": "paragraph",
+                  "text": "<strong>Example:</strong> If a country's applicable date is January 1, 2026, the surcharge would be applied as follows:"
+                },
+                {
+                  "type": "table",
+                  "headers": ["Period", "Surcharge"],
+                  "rows": [
+                    ["2026", "5% (Year 1)"],
+                    ["2027", "10% (Year 2)"],
+                    ["2028", "15% (Year 3)"],
+                    ["2029+", "20% (Capped at Year 4)"]
+                  ]
+                }
               ]
             },
             {
+              "type": "paragraph",
               "text": "<strong>Cap Rules:</strong> An absolute ceiling on the total tax rate (e.g., statutory rate + 20 pp)."
-            },
-            {
-              "text": "<strong>Safe Harbor & Transition Relief:</strong>",
-              "sub_items": [
-                "Potential penalty relief for withholding agents for a limited period (e.g., through 2026).",
-                "A grace period (e.g., 90 days) if a country is newly listed as discriminatory."
-              ]
             }
           ]
         }
       ]
     },
     {
+      "id": "carveouts_exceptions",
+      "title": "2.6 Carve-Outs and Exceptions",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Section 899 includes a number of carve-outs and exceptions to ensure it targets only truly unfair foreign taxes and genuinely base-erosion deductions. Each exception is rooted in the statute to prevent overreach and allow normal business activities to continue unpenalized."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Publicly Held Corporations:</strong> Companies whose shares are regularly traded on a public exchange are excluded from the > 50 % ownership test used to trigger the enhanced BEAT rules. This avoids ensnaring widely held firms whose ownership is too dispersed to link directly to discriminatory countries. (§ 899(b)(1)(E))"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Inventory & Depreciable Property:</strong> The purchase price of inventory (goods for resale) and depreciable or amortizable property (long-lived assets like machinery or buildings) remain deductible for BEAT purposes and are not treated as \"base-erosion payments.\" In simple terms, buying stock for resale or investing in capital assets won’t automatically increase your BEAT liability. (§ 899(a)(2)(D))"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>General Tax Exclusions:</strong> Not every foreign levy is considered \"unfair.\" Broad-based consumption taxes such as VAT or sales taxes, property taxes, estate and gift taxes, and ordinary income taxes on residents are explicitly excluded. Gross-basis withholding on compensation for services (a tax on total payment without deductions) is also carved out. (§ 899(c)(4)(A)–(I))"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Surcharge Cap:</strong> No surcharge can push any statutory U.S. rate more than 20 percentage points above its normal level. This absolute ceiling prevents runaway tax rates, even if a foreign country’s unfair tax persists. (§ 899(a)(4)(B))"
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Transition Relief & Safe Harbors:</strong> Withholding agents who demonstrate \"best efforts\" to comply before January 1, 2027 face no penalties or interest. A 90-day grace period also applies when a country is newly listed, giving businesses time to update systems and processes. (§ 899(a)(5)(C)–(D))"
+        }
+      ]
+    },
+    {
       "id": "decision-tools",
-      "title": "2.6 Decision Tools",
+      "title": "2.7 Decision Tools",
       "content": [
         {
           "type": "paragraph",
@@ -156,8 +275,22 @@
       ]
     },
     {
+      "id": "conclusion",
+      "title": "2.8 Conclusion",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Section 899 represents a significant (hypothetical) shift in U.S. international tax policy, aiming to counteract unfair foreign tax practices. Its complexity requires careful analysis by affected taxpayers."
+        },
+        {
+          "type": "placeholder_item",
+          "text": "<strong>Country Designation Timeline Selector:</strong> (Interactive timeline/selector) <div class=\"timeline-placeholder\">[Timeline: Country Designation Dates]</div>"
+        }
+      ]
+    },
+    {
       "id": "regulatory-guidance",
-      "title": "2.7 Regulatory Guidance & Future Changes",
+      "title": "2.9 Regulatory Guidance & Future Changes",
       "content": [
         {
           "type": "list",

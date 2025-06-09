@@ -18,14 +18,36 @@
 
 ## Medium Priority
 
-### 1. Missing Test Coverage
+### 1. Impact Estimator Flowchart and Calculator Conflict
+- **Description**: The new Impact Estimator flowchart (intended for `#impact-estimator` route) conflicts with a pre-existing calculator. The calculator was originally in `site/pages/impact_estimator.html`. The flowchart's JS (`impact_estimator.js`) currently replaces the calculator content, causing a flash of the calculator and making it inaccessible.
+- **Status**: In Progress
+- **Repro Steps**:
+  1. Navigate to the "Impact Estimator" page.
+  2. Observe a brief flash of the calculator interface before the flowchart appears.
+  3. The calculator interface is no longer directly accessible.
+- **Goal**: Separate the flowchart and calculator into distinct, navigable pages/routes.
+- **Proposed Solution**:
+  1. Ensure `site/pages/calculator.html` contains the calculator markup.
+  2. Modify `site/pages/impact_estimator.html` to be a minimal container for the flowchart only.
+  3. Update `impact_estimator.js` to render the flowchart into its dedicated container within `site/pages/impact_estimator.html`.
+  4. Update `navigation.js` to have separate routes (e.g., `#impact-estimator` for flowchart, `#calculator` for calculator) and correctly initialize their respective JS files.
+- **Files Affected**:
+  - `site/pages/impact_estimator.html`
+  - `site/pages/calculator.html` (ensure it exists with correct content)
+  - `site/js/impact_estimator.js`
+  - `site/js/navigation.js`
+  - `site/js/calculator.js` (ensure it's correctly linked and initialized for the new calculator route)
+
+
+
+### 2. Missing Test Coverage
 - **Description**: Need to add unit tests for the new legislation-related JavaScript code
 - **Files Affected**:
   - `js/legislation-summary.js`
   - `js/glossary-links.js`
   - `pages/legislation.html`
 
-### 2. Performance Optimization
+### 3. Performance Optimization
 - **Description**: The legislation page may benefit from lazy loading or pagination for large JSON files
 - **Files Affected**:
   - `pages/legislation.html`
