@@ -1,7 +1,22 @@
 <!-- pages/impact_estimator.html -->
 <div class="page-content">
     <h1>Impact Estimator</h1>
-    <p>This tool provides a simplified, illustrative estimation of the potential impact of Section 899 based on hypothetical scenarios. It is for educational purposes only and should <strong>not</strong> be considered financial or legal advice.</p>
+    <p>This tool provides a simplified, illustrative estimation of the potential impact of <a href="index.html#legislation">Section 899</a> based on hypothetical scenarios. It is for educational purposes only and should <strong>not</strong> be considered financial or legal advice.</p>
+
+    <div id="example-jump-links-container" class="card jump-links-section" style="margin-bottom: 20px; padding: 15px;">
+        <h3>Quick Jump to Examples:</h3>
+        <div id="example-jump-links">
+            <!-- Links will be populated here by JavaScript -->
+        </div>
+    </div>
+
+    <section id="flowchart-section" class="card">
+        <h2>Decision Flowchart</h2>
+        <p>The following flowchart illustrates the general decision points related to <a href="index.html#legislation">Section 899</a> applicability. Use the form below to estimate impacts for specific scenarios.</p>
+        <div id="impact-estimator-flowchart-content">
+            <!-- Content from impact_estimator.json (e.g., Mermaid diagram) will be rendered here by impact_estimator.js -->
+        </div>
+    </section>
 
     <section id="estimator-form-section" class="card">
         <h2>3.1 Input Section</h2>
@@ -87,20 +102,8 @@
 
     <section id="examples-section" class="card">
         <h2>3.3 Examples</h2>
-        <div class="example-item">
-            <h3>Worked Example 1: French DST Surcharge Timeline</h3>
-            <p>This example will illustrate how the §899 surcharge might apply to a company paying French Digital Services Tax, considering the ramp-up of the applicable percentage points over several years.</p>
-            <p><em>(Detailed scenario, inputs, and step-by-step calculation will be presented here.)</em></p>
-        </div>
-        <div class="example-item">
-            <h3>Worked Example 2: Extraterritorial Tax Failing Carve-Outs</h3>
-            <p>This scenario will demonstrate the impact on a U.S. company subject to a foreign tax deemed extraterritorial by U.S. standards and failing any available carve-outs under §899.</p>
-            <p><em>(Detailed scenario, inputs, and step-by-step calculation will be presented here.)</em></p>
-        </div>
-        <div class="example-item">
-            <h3>Worked Example 3: UTPR Impact under BEAT Overlay</h3>
-            <p>This example will explore a hypothetical Undertaxed Profits Rule (UTPR) scenario where the §899 provisions interact with or modify the Base Erosion and Anti-abuse Tax (BEAT) for a U.S. corporation.</p>
-            <p><em>(Detailed scenario, inputs, and step-by-step calculation will be presented here.)</em></p>
+        <div id="estimator-examples-content">
+            <!-- Examples will be loaded here by impact_estimator.js -->
         </div>
     </section>
 

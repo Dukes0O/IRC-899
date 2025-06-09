@@ -135,11 +135,11 @@ const LegislationPage = (() => {
 
     const renderLegislation = (data, container) => {
         console.log('LEGISLATION.JS: renderLegislation called with new structure.');
-        if (data && data.content) {
-            console.log(`LEGISLATION.JS: data.content contains ${data.content.length} top-level items.`);
+        if (data && data.provisions) {
+            console.log(`LEGISLATION.JS: data.provisions contains ${data.provisions.length} top-level items.`);
         } else {
-            console.error('LEGISLATION.JS: data.content is undefined or null in renderLegislation.');
-            container.innerHTML = '<p class="error-message">Error: Legislation data content is missing.</p>';
+            console.error('LEGISLATION.JS: data.provisions is undefined or null in renderLegislation.');
+            container.innerHTML = '<p class="error-message">Error: Legislation provisions data is missing.</p>';
             return;
         }
         renderItemCount = 0; // Reset counter for each full render
@@ -150,9 +150,9 @@ const LegislationPage = (() => {
             html += `<h2 class=\"legislation-main-title\">${data.section_number} ${data.section_title}</h2>`;
         }
 
-        if (data.content && Array.isArray(data.content)) {
+        if (data.provisions && Array.isArray(data.provisions)) {
             let topLevelItemsProcessed = 0;
-            data.content.forEach((item, index) => {
+            data.provisions.forEach((item, index) => {
                 // console.log(`LEGISLATION.JS: Processing top-level item ${index + 1}/${data.content.length}, ID: ${item.id}`);
                 html += renderLegislativeItem(item, 1); // Start top-level items (e.g., subsections (a), (b)) at level 1
                 topLevelItemsProcessed++;
