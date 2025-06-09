@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "title": "Understanding Section 899",
+    "lead": "Your guide to navigating the complexities of Section 899 of the Internal Revenue Code, concerning unfair foreign taxes and their impact on U.S. trade and commerce.",
+    "description": "This tool provides clear explanations, an impact estimator, and essential resources to help you understand this critical legislation.",
+    "cta": [
+      {
+        "text": "Explore Key Provisions",
+        "url": "#key-provisions",
+        "class": "btn-primary"
+      },
+      {
+        "text": "Try the Impact Estimator",
+        "url": "#impact-estimator",
+        "class": "btn-secondary"
+      }
+    ]
+  },
+  "keyPoints": [
+    {
+      "title": "What is Section 899?",
+      "content": "Section 899 is a part of the U.S. Internal Revenue Code designed to counteract the effects of certain foreign taxes or subsidies that are deemed unfair or discriminatory, potentially harming U.S. businesses and distorting international trade. It provides mechanisms to impose additional taxes or adjust existing tax liabilities to level the playing field."
+    },
+    {
+      "title": "Who is Affected?",
+      "content": "This section impacts U.S. taxpayers (individuals and corporations) engaging in international transactions, particularly those dealing with entities in countries identified as having 'unfair foreign taxes.' It also affects foreign entities subject to these U.S. tax adjustments."
+    },
+    {
+      "title": "Why Was It Implemented?",
+      "content": "The rationale behind Section 899 is to protect U.S. economic interests, ensure fair competition, and respond to international tax practices that might erode the U.S. tax base or disadvantage American companies in the global market."
+    }
+  ],
+  "quickLinks": [
+    {
+      "title": "Full Legislative Text",
+      "url": "#legislation"
+    },
+    {
+      "title": "Deep Dive into Key Provisions",
+      "url": "#key-provisions"
+    },
+    {
+      "title": "Estimate Potential Impact",
+      "url": "#impact-estimator"
+    },
+    {
+      "title": "Understand Key Terminology",
+      "url": "#glossary"
+    },
+    {
+      "title": "Frequently Asked Questions",
+      "url": "#faq"
+    },
+    {
+      "title": "About This Educational Tool",
+      "url": "#about"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview of Section 899",
+      "content": "Section 899 is a newly proposed 'retaliatory' code section designed to neutralize foreign tax measures that burden U.S. persons. Its core purpose is to discourage discriminatory or extraterritorial foreign taxes—such as digital-services taxes (DSTs) and undertaxed-profits rules (UTPRs)—that distort cross-border trade and erode U.S. tax revenues by increasing U.S. tax rates on 'applicable persons' from those jurisdictions."
+    },
+    {
+      "id": "definitions",
+      "title": "Key Definitions",
+      "items": [
+        {
+          "term": "Applicable Person",
+          "definition": "Any non-U.S. individual, foreign corporation, government, private foundation, trust, partnership, branch, or other entity that is resident in—or more than 50% owned or controlled (vote or value) by residents of—a country designated as 'discriminatory'."
+        },
+        {
+          "term": "Discriminatory Foreign Country",
+          "definition": "A jurisdiction that imposes one or more 'unfair foreign taxes' and is listed by Treasury in quarterly guidance. Examples include those that have enacted per se unfair taxes (DSTs, UTPRs, DPTs) without cost-recovery or that apply extraterritorially."
+        },
+        {
+          "term": "Unfair Foreign Tax",
+          "definition": "Any of: An OECD Pillar 2 Undertaxed Profits Rule (UTPR), A Digital Services Tax (DST) on nonresident tech-company revenues, A Diverted Profits Tax (DPT) targeting profit shifting, or any extraterritorial or discriminatory tax that falls within Treasury's delegated authority."
+        }
+      ]
+    },
+    {
+      "id": "tax-implications",
+      "title": "Tax Implications",
+      "content": "Section 899 can materially increase U.S. tax borne by applicable persons through increased income tax rates and higher withholding taxes. The calculation involves identifying the U.S. tax base (income or payment), applying the statutory surcharge (variable by year), and observing any carve-outs and caps."
+    },
+    {
+      "id": "compliance",
+      "title": "Compliance Requirements",
+      "items": [
+        "Maintain due-diligence records to substantiate 'applicable person' status",
+        "Disclose surcharges on U.S. returns via new schedules or lines on Forms 1040, 1120, and 1042",
+        "Observe standard IRS deadlines for filings",
+        "For withholding failures before January 1, 2027, demonstrate 'best-efforts' compliance to avoid penalties"
+      ]
+    }
+  ],
+  "disclaimer": "The information provided by this tool is for educational and informational purposes only. It is not intended as, and should not be construed as, legal or tax advice. Consult with a qualified professional for advice tailored to your specific situation."
+}

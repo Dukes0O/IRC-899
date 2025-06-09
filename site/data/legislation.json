@@ -1,0 +1,496 @@
+{
+  "section_number": "899",
+  "section_title": "ENFORCEMENT OF REMEDIES AGAINST UNFAIR FOREIGN TAXES.",
+  "provisions": [
+    {
+      "id": "(a)",
+      "title": "INCREASED RATES OF TAX ON FOREIGN PERSONS OF DISCRIMINATORY FOREIGN COUNTRIES.",
+      "paragraphs": [
+        {
+          "id": "(1)",
+          "title": "TAXES OTHER THAN WITHHOLDING TAXES.",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "title": "IN GENERAL.",
+              "text": "In the case of any applicable person, each specified rate of tax (or any rate of tax applicable in lieu of such statutory rate) shall be increased by the applicable number of percentage points."
+            },
+            {
+              "id": "(B)",
+              "title": "SPECIFIED RATE OF TAX.",
+              "text": "For purposes of this paragraph, the term ‘specified rate of tax’ means—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text": "the rates of tax specified in paragraphs (1) and (2) of section 871(a),"
+                },
+                {
+                  "id": "(ii)",
+                  "text": "in the case of any applicable person to which section 871(b) applies, each rate of tax in effect under section 1,"
+                },
+                {
+                  "id": "(iii)",
+                  "text": "the rate of tax specified in section 881(a),"
+                },
+                {
+                  "id": "(iv)",
+                  "text": "in the case of any applicable person to which section 882(a) applies, the rate of tax specified in section 11(b),"
+                },
+                {
+                  "id": "(v)",
+                  "text": "the rate of tax specified in section 884(a), and"
+                },
+                {
+                  "id": "(vi)",
+                  "text": "the rate of tax specified in section 4948(a)."
+                }
+              ]
+            },
+            {
+              "id": "(C)",
+              "title": "APPLICATION OF INCREASED RATES TO EFFECTIVELY CONNECTED INCOME OF NONRESIDENT ALIEN INDIVIDUALS LIMITED TO GAINS ON UNITED STATES REAL PROPERTY INTERESTS.",
+              "text_intro": "In the case of any individual to whom subparagraph (A) applies, the tax imposed under section 1 on such individual (after application of subparagraph (A)) shall be reduced (but not below zero) by the excess of—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text": "the tax which would be imposed under such section (after application of subparagraph (A)) if FIRPTA items were not taken into account, over"
+                },
+                {
+                  "id": "(ii)",
+                  "text": "the tax which would be imposed under such section if FIRPTA items were not taken into account, and subparagraph (A) did not apply."
+                }
+              ],
+              "text_concluding": "For purposes of this clause, the term ‘FIRPTA items’ means gains and losses taken into account under section 871(b)(1) by reason of section 897(a)(1)(A)."
+            },
+            {
+              "id": "(D)",
+              "title": "APPLICATION OF INCREASED RATES TO CERTAIN FOREIGN GOVERNMENTS.",
+              "text": "In the case of any applicable person described in subsection (b)(1)(A), section 892(a) shall not apply."
+            }
+          ]
+        },
+        {
+          "id": "(2)",
+          "title": "MODIFICATION OF BASE EROSION AND ANTI-ABUSE TAX.",
+          "text_intro": "In the case of any corporation described in subsection (b)(1)(E) (applied by substituting ‘corporation’ for ‘foreign corporation’)—",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "text": "such corporation shall be treated as described in subparagraphs (B) and (C) of section 59A(e)(1) for purposes of determining whether such corporation is an applicable taxpayer,"
+            },
+            {
+              "id": "(B)",
+              "text_intro": "section 59A(b)(1) shall be applied by—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text": "substituting ‘12.5 percent’ for ‘10 percent’ in subparagraph (A), and"
+                },
+                {
+                  "id": "(ii)",
+                  "text": "by treating the amount described in section 59A(b)(1)(B)(ii) as being zero,"
+                }
+              ]
+            },
+            {
+              "id": "(C)",
+              "text": "subsections (c)(2)(B), (c)(4)(B)(ii), and (d)(5) of section 59A shall not apply, and"
+            },
+            {
+              "id": "(D)",
+              "text": "if any amount (other than the purchase price of depreciable or amortizable property or inventory) would have been a base erosion payment described in section 59A(d)(1) but for the fact that the taxpayer capitalizes the amount, then solely for purposes of calculating the taxpayer’s base erosion payments (within the meaning of section 59A(d)) and base erosion tax benefits (within the meaning of section 59A(c)(2)), such amount shall be treated as if it had been deducted rather than capitalized."
+            }
+          ]
+        },
+        {
+          "id": "(3)",
+          "title": "WITHHOLDING TAXES.",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "title": "IN GENERAL.",
+              "text": "In the case of any payment to an applicable person, each rate of tax specified in section 1441(a) or 1442(a) (or any rate of tax applicable in lieu of such statutory rate) shall be increased by the applicable number of percentage points. The preceding sentence shall not apply to the 14 percent rate of tax specified in section 1441(a)."
+            },
+            {
+              "id": "(B)",
+              "title": "DISPOSITION OF UNITED STATES REAL PROPERTY INTERESTS.",
+              "text": "In the case of any disposition of a United States real property interest (as defined in section 897(c)) by an applicable person, the rate of tax specified in section 1445(a) (or any rate of tax applicable in lieu of such statutory rate) shall be increased by the applicable number of percentage points."
+            },
+            {
+              "id": "(C)",
+              "title": "OTHER DISPOSITIONS AND DISTRIBUTIONS RELATED TO UNITED STATES REAL PROPERTY INTERESTS.",
+              "text_intro": "In the case of any disposition or distribution described in any paragraph of section 1445(e), each rate of tax in such paragraph (or any rate of tax applicable in lieu of such statutory rate) shall be increased by the applicable number of percentage points if—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text": "in the case of section 1445(e)(1), the foreign person referred to in subparagraph (A) or (B) of such section is an applicable person,"
+                },
+                {
+                  "id": "(ii)",
+                  "text": "in the case of section 1445(e)(2), the foreign corporation referred to in such section is an applicable person,"
+                },
+                {
+                  "id": "(iii)",
+                  "text": "in the case of section 1445(e)(3), the foreign shareholder referred to in such section is an applicable person,"
+                },
+                {
+                  "id": "(iv)",
+                  "text": "in the case of section 1445(e)(4), the foreign person referred to in such section is an applicable person,"
+                },
+                {
+                  "id": "(v)",
+                  "text": "in the case of section 1445(e)(5), the Secretary issues regulations or other guidance providing for such increase, and"
+                },
+                {
+                  "id": "(vi)",
+                  "text": "in the case of section 1445(e)(6), the nonresident alien individual or foreign corporation referred to in such section is an applicable person."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "(4)",
+          "title": "APPLICABLE NUMBER OF PERCENTAGE POINTS.",
+          "text_intro": "For purposes of this paragraph—",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "title": "IN GENERAL.",
+              "text_intro": "The term ‘applicable number of percentage points’ means, with respect to any discriminatory foreign country—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text": "with respect to the 1-year period beginning on the applicable date with respect to such foreign country, 5 percentage points, and"
+                },
+                {
+                  "id": "(ii)",
+                  "text_intro": "with respect to any period after the 1-year period to which clause (i) applies, the sum of —",
+                  "sub_clauses": [
+                    {
+                      "id": "(I)",
+                      "text": "5 percentage points, plus"
+                    },
+                    {
+                      "id": "(II)",
+                      "text": "an additional 5 percentage points for each annual anniversary of such applicable date which has occurred before the beginning of such period."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "(B)",
+              "title": "CAP ON INCREASE.",
+              "text": "Notwithstanding subparagraph (A), the increase in any rate under paragraph (1) or (3) shall not result in such rate exceeding the amount of the statutory rate (determined without regard to any rate applicable in lieu of such statutory rate) increased by 20 percentage points."
+            },
+            {
+              "id": "(C)",
+              "title": "APPLICABLE DATE.",
+              "text_intro": "For purposes of this section, the term ‘applicable date’ means, with respect to any discriminatory foreign country, the first day of the first calendar year beginning on or after the latest of—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text": "90 days after the date of enactment of this section,"
+                },
+                {
+                  "id": "(ii)",
+                  "text": "180 days after the date of enactment of the unfair foreign tax that causes such country to be treated as a discriminatory foreign country, or"
+                },
+                {
+                  "id": "(iii)",
+                  "text": "the first date that an unfair foreign tax of such country begins to apply."
+                }
+              ]
+            },
+            {
+              "id": "(D)",
+              "title": "APPLICATION TO TAXABLE YEARS.",
+              "text": "For purposes of paragraph (1), the applicable number of percentage points is the applicable number of percentage points in effect for the discriminatory foreign country during the taxpayer’s taxable year. If more than one applicable number of percentage points is in effect for the discriminatory foreign country during the taxpayer’s taxable year, the applicable number of percentage points shall be determined by using a weighted average rate based on each applicable number of percentage points in effect during such taxable year and the number of days during which it was in effect. For purposes of the prior sentence, the applicable number of percentage points in effect for the discriminatory foreign country for the period before the applicable date is treated as zero, and, if the taxpayer ceases to be an applicable person during its taxable year, the applicable number of percentage points in effect for the discriminatory foreign country for the period after the taxpayer ceased to be an applicable person is treated as zero."
+            },
+            {
+              "id": "(E)",
+              "title": "APPLICATION TO WITHHOLDING TAXES.",
+              "text": "For purposes of paragraph (3), the applicable number of percentage points shall be determined with respect to the date of the payment or disposition, as the case may be."
+            },
+            {
+              "id": "(F)",
+              "title": "MULTIPLE DISCRIMINATORY FOREIGN COUNTRIES.",
+              "text": "For purposes of paragraphs (1) and (3), if, on any day, the taxpayer is an applicable person with respect to more than one discriminatory foreign country, the highest applicable number of percentage points in effect shall apply."
+            },
+            {
+              "id": "(G)",
+              "title": "INCREASE NOT APPLICABLE TO NONDISCRIMINATORY FOREIGN COUNTRIES.",
+              "text": "In the case of any foreign country which is not a discriminatory foreign country, the applicable number of percentage points is zero."
+            }
+          ]
+        },
+        {
+          "id": "(5)",
+          "title": "YEARS TO WHICH APPLICABLE.",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "title": "TAXABLE YEAR.",
+              "text_intro": "In the case of any person, paragraphs (1) and (2) shall apply to each taxable year beginning—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text_intro": "after the later of—",
+                  "sub_clauses": [
+                    {
+                      "id": "(I)",
+                      "text": "90 days after the date of enactment of this section,"
+                    },
+                    {
+                      "id": "(II)",
+                      "text": "180 days after the date of enactment of the unfair foreign tax that causes such country to be treated as a discriminatory foreign country, or"
+                    },
+                    {
+                      "id": "(III)",
+                      "text": "the first date that an unfair foreign tax of such country begins to apply, and"
+                    }
+                  ]
+                },
+                {
+                  "id": "(ii)",
+                  "text": "before the last date on which the discriminatory foreign country imposes an unfair foreign tax."
+                }
+              ]
+            },
+            {
+              "id": "(B)",
+              "title": "WITHHOLDING.",
+              "text": "In the case of any person, paragraph (3) shall apply to each calendar year beginning during the period that such person is an applicable person."
+            },
+            {
+              "id": "(C)",
+              "title": "SAFE HARBOR FOR WITHHOLDING.",
+              "text_intro": "Paragraph (3) shall not apply—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text": "in the case of any applicable person to which clause (ii) does not apply, if the discriminatory foreign country with respect to which such person is an applicable person is not listed by the Secretary as a discriminatory foreign country, and"
+                },
+                {
+                  "id": "(ii)",
+                  "text": "in the case of any applicable person described in subparagraph (E) or (F) of subsection (b)(1), if the discriminatory foreign country with respect to which such person is an applicable person (and such country’s applicable date) has been listed in such guidance for less than 90 days."
+                }
+              ]
+            },
+            {
+              "id": "(D)",
+              "title": "TEMPORARY SAFE HARBOR FOR WITHHOLDING AGENTS.",
+              "text": "No penalties or interest shall be imposed with respect to failures, before January 1, 2027, to deduct or withhold any amounts by reason of paragraph (3) if the person required to deduct or withhold such amounts demonstrates to the satisfaction of the Secretary that such person made best efforts to comply with paragraph (3) in a timely manner."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "(b)",
+      "title": "APPLICABLE PERSON.",
+      "text_intro": "For purposes of this section—",
+      "paragraphs": [
+        {
+          "id": "(1)",
+          "title": "IN GENERAL.",
+          "text_intro": "Except as otherwise provided by the Secretary, the term ‘applicable person’ means—",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "text": "any government (within the meaning of section 892) of any discriminatory foreign country,"
+            },
+            {
+              "id": "(B)",
+              "text": "any individual (other than a citizen or resident of the United States) who is tax resident of a discriminatory foreign country,"
+            },
+            {
+              "id": "(C)",
+              "text": "any foreign corporation (other than a United States-owned foreign corporation, as defined in section 904(h)(6)) which is a tax resident of a discriminatory foreign country,"
+            },
+            {
+              "id": "(D)",
+              "text": "any private foundation (within the meaning of section 4948) created or organized in a discriminatory foreign country,"
+            },
+            {
+              "id": "(E)",
+              "text_intro": "any foreign corporation (other than a publicly held corporation) if more than 50 percent of—",
+              "clauses": [
+                {
+                  "id": "(i)",
+                  "text": "the total combined voting power of all classes of stock of such corporation entitled to vote, or"
+                },
+                {
+                  "id": "(ii)",
+                  "text": "the total value of the stock of such corporation,"
+                }
+              ],
+              "text_concluding": "is owned (within the meaning of section 958(a)) by persons described in this paragraph,"
+            },
+            {
+              "id": "(F)",
+              "text": "any trust the majority of the beneficial interests of which are held (directly or indirectly) by persons described in this paragraph, and"
+            },
+            {
+              "id": "(G)",
+              "text": "foreign partnerships, branches, and any other entity identified with respect to a discriminatory foreign country by the Secretary for purposes of this subsection."
+            }
+          ]
+        },
+        {
+          "id": "(2)",
+          "title": "CONTINUATION OF TREATMENT DURING CERTAIN PERIODS.",
+          "text": "For purposes of this section, if a person would cease to be an applicable person for a period of less than one year, such person shall continue to be treated as an applicable person during such period."
+        }
+      ]
+    },
+    {
+      "id": "(c)",
+      "title": "UNFAIR FOREIGN TAX.",
+      "text_intro": "For purposes of this section—",
+      "paragraphs": [
+        {
+          "id": "(1)",
+          "title": "IN GENERAL.",
+          "text_intro": "The term ‘unfair foreign tax’ means an undertaxed profits rule (UTPR), digital services tax, diverted profits tax, and, to the extent provided by the Secretary, an extraterritorial tax, discriminatory tax, or any other tax enacted with a public or stated purpose indicating the tax will be economically borne, directly or indirectly, disproportionately by United States persons. Such term shall not include any tax which neither applies to—",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "text": "any United States person (including a trade or business of a United States person), nor"
+            },
+            {
+              "id": "(B)",
+              "text": "any foreign corporation (including a trade or business of such foreign corporation) if the foreign corporation is a controlled foreign corporation and more than 50 percent of the total combined voting power of all classes of stock of such corporation entitled to vote, or the total value of the stock of such corporation) is owned (within the meaning of section 958(a)) by United States persons."
+            }
+          ]
+        },
+        {
+          "id": "(2)",
+          "title": "EXTRATERRITORIAL TAX.",
+          "text": "The term ‘extraterritorial tax’ means any tax imposed by a foreign country on a corporation (including any trade or business of such corporation) which is determined by reference to any income or profits received by any person (including any trade or business of any person) by reason of such person being connected to such corporation through any chain of ownership, determined without regard to the ownership interests of any individual, and other than by reason of such corporation having a direct or indirect ownership interest in such person."
+        },
+        {
+          "id": "(3)",
+          "title": "DISCRIMINATORY TAX.",
+          "text_intro": "The term ‘discriminatory tax’ means any tax imposed by a foreign country if—",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "text": "such tax applies more than incidentally to items of income that would not be considered to be from sources, or effectively connected to a trade or business, within the foreign country under the rules of part I of this subchapter if such part were applied by treating such foreign country as though it were the United States,"
+            },
+            {
+              "id": "(B)",
+              "text": "such tax is imposed on a base other than net income and is not computed by permitting recovery of costs and expenses,"
+            },
+            {
+              "id": "(C)",
+              "text": "such tax is exclusively or predominantly applicable, in practice or by its terms, to nonresident individuals and foreign corporations or partnerships (as determined under rules similar to paragraphs (4) and (5) of section 7701(a) by treating the foreign country as though it were the United States) because of the application of revenue thresholds, exemptions or exclusions for taxpayers subject to such foreign country’s corporate income tax, or restrictions of scope that ensure that substantially all residents (other than foreign corporations and partnerships (as so determined)) supplying comparable goods or services are excluded from the application of such tax, or"
+            },
+            {
+              "id": "(D)",
+              "text": "such tax is not treated as an income tax under the laws of such foreign country or is otherwise treated by such foreign country as outside the scope of any agreements that are in force between such foreign country and one or more other jurisdictions for the avoidance of double taxation with respect to taxes on income."
+            }
+          ]
+        },
+        {
+          "id": "(4)",
+          "title": "EXCEPTIONS.",
+          "text_intro": "Except as otherwise provided by the Secretary, the terms ‘extraterritorial tax’ and ‘discriminatory tax’ shall not include any generally applicable tax which constitutes—",
+          "subparagraphs": [
+            {
+              "id": "(A)",
+              "text": "an income tax generally imposed on the income of citizens or residents of the foreign country, even if the computation of income includes payments that would be foreign source income under part I of this subchapter,"
+            },
+            {
+              "id": "(B)",
+              "text": "an income tax which would be an unfair foreign tax (determined without regard to this subparagraph) solely because it is imposed on the income of nonresidents attributable to a trade or business in such foreign country,"
+            },
+            {
+              "id": "(C)",
+              "text": "an income tax which would be an unfair foreign tax (determined without regard to this subparagraph) solely because it is imposed on citizens or residents of such foreign country by reference to the income of a corporate subsidiary of such person,"
+            },
+            {
+              "id": "(D)",
+              "text": "a withholding tax, or other gross basis tax, on any amount described in section 871(a)(1) or 881(a), other than any withholding tax, or other gross basis tax, imposed with respect to services performed by persons other than individuals,"
+            },
+            {
+              "id": "(E)",
+              "text": "a value added tax, goods and services tax, sales tax, or other similar tax on consumption,"
+            },
+            {
+              "id": "(F)",
+              "text": "a tax imposed with respect to transactions on a per-unit or per-transaction basis rather than on an ad valorem basis,"
+            },
+            {
+              "id": "(G)",
+              "text": "a tax on real or personal property, an estate tax, a gift tax, other similar tax,"
+            },
+            {
+              "id": "(H)",
+              "text": "a tax which would not be an extraterritorial tax or discriminatory tax (determined without regard to this subparagraph) except by reason of consolidation or loss sharing rules that generally apply only with respect to income of tax residents of the foreign country, or"
+            },
+            {
+              "id": "(I)",
+              "text": "any other tax identified by the Secretary for purposes of this paragraph."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "(d)",
+      "title": "OTHER DEFINITIONS.",
+      "text_intro": "For purposes of this section—",
+      "paragraphs": [
+        {
+          "id": "(1)",
+          "title": "DISCRIMINATORY FOREIGN COUNTRY.",
+          "text": "The term ‘discriminatory foreign country’ means any foreign country which has one or more unfair foreign taxes."
+        },
+        {
+          "id": "(2)",
+          "title": "FOREIGN COUNTRY.",
+          "text": "The term ‘foreign country’ means a foreign country (or political subdivision thereof) or a dependent territory or possession of a foreign country. Such term does not include any possession of the United States."
+        },
+        {
+          "id": "(3)",
+          "title": "TAX.",
+          "text": "The term ‘tax’ includes any increase in tax whether effectuated by an increase in the rate or base of a tax, by a denial of deductions or credits, or otherwise."
+        }
+      ]
+    },
+    {
+      "id": "(e)",
+      "title": "REGULATIONS AND OTHER GUIDANCE.",
+      "text_intro": "The Secretary shall issue such regulations or other guidance as may be necessary or appropriate to carry out the purposes of this section, including regulations or other guidance which—",
+      "paragraphs": [
+        {
+          "id": "(1)",
+          "text": "provide for such adjustments to the application of this section as are necessary to prevent the avoidance of the purposes of this section, including the application of this section (including subsections (b)(1)(E) and (c)(2)(A)(ii)) with respect to branches, partnerships, and other entities (whether or not otherwise disregarded for purposes of this chapter),"
+        },
+        {
+          "id": "(2)",
+          "text": "list the discriminatory foreign countries (and each such country’s applicable date) in guidance, and update such guidance on a quarterly basis,"
+        },
+        {
+          "id": "(3)",
+          "text": "provide notice to Congress with respect to changes to the list under paragraph (2),"
+        },
+        {
+          "id": "(4)",
+          "text": "exercise the authority to provide exceptions under subsections (b)(1), (c)(4), and"
+        },
+        {
+          "id": "(5)",
+          "text": "prevent the application of subsection (a)(2)(D) from resulting in double counting of amounts for purposes of section 59A(c)(4)(A)(ii).’’. // Note: extra quote and period from original text"
+        }
+      ]
+    }
+  ],
+  "clerical_amendment": {
+    "id": "(b)",
+    "title": "CLERICAL AMENDMENT.",
+    "text": "The table of sections for subpart D of part II of subchapter N of chapter 1 is amended by adding at the end the following new item: ‘Sec. 899. Enforcement of remedies against unfair foreign taxes.’."
+  }
+}

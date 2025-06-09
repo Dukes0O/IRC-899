@@ -1,0 +1,175 @@
+{
+  "page_title": "Key Provisions of Section 899",
+  "intro_paragraph": "This section delves into the core components of Section 899, outlining its legislative purpose, scope, key definitions, tax implications, compliance requirements, special mechanics, and decision-making tools.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "2.1 Overview of Section 899",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "<strong>Legislative Purpose:</strong> To counteract unfair foreign tax practices that distort international trade and harm U.S. economic interests by imposing targeted tax adjustments."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Effective Dates:</strong> (Placeholder: Specify effective dates as per hypothetical legislation - e.g., Applicable to tax years beginning after December 31, 2024)."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Scope of Application:</strong> Primarily affects U.S. taxpayers dealing with entities in or deriving income from countries designated as having 'unfair foreign taxes,' and foreign persons subject to these U.S. tax adjustments."
+        }
+      ]
+    },
+    {
+      "id": "definitions",
+      "title": "2.2 Key Definitions",
+      "content": [
+        {
+          "type": "definition_item",
+          "term": "Applicable Person",
+          "definition": "Refers to entities subject to the provisions of Section 899. This broadly includes:",
+          "points": [
+            "Foreign governments imposing or benefiting from the unfair tax.",
+            "Foreign individuals or corporations making payments subject to an unfair foreign tax or receiving benefits from such tax regimes.",
+            "Other entities as specified by Treasury regulations."
+          ]
+        },
+        {
+          "type": "definition_item",
+          "term": "Discriminatory Foreign Country",
+          "definition": "A country formally designated by the U.S. Treasury as maintaining one or more 'unfair foreign taxes'.",
+          "points": [
+            "<strong>Criteria for Designation:</strong> Based on specific characteristics of the foreign tax law, its extraterritorial application, or its discriminatory effect on U.S. businesses.",
+            "<strong>List of Current Countries:</strong> (Placeholder: e.g., As of June 2025: Country X, Country Y. This list would be updated quarterly by Treasury.)"
+          ]
+        },
+        {
+          "type": "definition_item",
+          "term": "Unfair Foreign Taxes",
+          "definition": "Taxes identified by Section 899 or designated by Treasury, including but not limited to:",
+          "points": [
+            "Digital Services Taxes (DSTs) that are discriminatory.",
+            "Diverted Profits Taxes (DPTs) that target U.S. multinationals unfairly.",
+            "Other taxes deemed to have an adverse impact on U.S. trade or tax revenues due to their design or application."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tax-implications",
+      "title": "2.3 Tax Implications",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Section 899 can result in:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Increased Tax Rates:</strong> Application of higher effective U.S. tax rates on certain income associated with unfair foreign taxes (e.g., via denial of deductions, imposition of surcharges, or modifications to existing regimes like BEAT).",
+            "<strong>Withholding Taxes:</strong> Potential for new or increased withholding obligations on payments to applicable persons in discriminatory foreign countries."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Calculation Methodology:</strong> Involves determining a base amount of income or payment affected by the unfair foreign tax, applying the specified Section 899 rate adjustment (which may ramp up over time), and considering special rules or exceptions."
+        }
+      ]
+    },
+    {
+      "id": "compliance",
+      "title": "2.4 Compliance Requirements",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "<strong>Documentation:</strong> Taxpayers may need to maintain specific documentation to support their Section 899 positions.",
+            "<strong>Reporting Obligations:</strong> Disclosure on tax returns or specific forms may be required.",
+            "<strong>Filing Deadlines:</strong> Standard tax filing deadlines apply, with potential for specific schedules related to Section 899.",
+            "<strong>Penalties for Non-Compliance:</strong> Standard tax penalties may apply, with potential specific penalties under Section 899."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special-mechanics",
+      "title": "2.5 Special Mechanics",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Section 899 includes unique operational rules, such as:"
+        },
+        {
+          "type": "nested_list",
+          "items": [
+            {
+              "text": "<strong>BEAT Modifications (&sect;899(a)(2) - hypothetical):</strong>",
+              "sub_items": [
+                "Applicability test override (certain foreign group payments treated as base erosion payments).",
+                "Potential substitution of a higher BEAT rate (e.g., 12.5% or more) for affected payments.",
+                "Possible elimination of the Qualified Business Asset Investment (QBAI) return and other exceptions for these payments."
+              ]
+            },
+            {
+              "text": "<strong>Applicable Percentage-Point Ramp-Up (&sect;899(a)(4) - hypothetical):</strong>",
+              "sub_items": [
+                "A gradual increase in the surcharge or tax adjustment (e.g., +5 percentage points in year 1, +5 pp each subsequent anniversary, up to a 20 pp cap).",
+                "Weighted-average rules for fiscal years that span a rate change."
+              ]
+            },
+            {
+              "text": "<strong>Cap Rules:</strong> An absolute ceiling on the total tax rate (e.g., statutory rate + 20 pp)."
+            },
+            {
+              "text": "<strong>Safe Harbor & Transition Relief:</strong>",
+              "sub_items": [
+                "Potential penalty relief for withholding agents for a limited period (e.g., through 2026).",
+                "A grace period (e.g., 90 days) if a country is newly listed as discriminatory."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decision-tools",
+      "title": "2.6 Decision Tools",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Interactive tools to aid understanding (placeholders for future implementation):"
+        },
+        {
+          "type": "tool_item",
+          "title": "\"Am I an Applicable Person?\" Flowchart:",
+          "description": "This flowchart helps determine if an entity might be considered an 'Applicable Person' under the hypothetical Section 899.",
+          "mermaid_code": "graph TD\n    A[Start: Entity Assessment] --> B{Are you a foreign government?};\n    B -- Yes --> C[Potentially Applicable Person if imposing/benefiting from Unfair Foreign Tax];\n    B -- No --> D{Are you a foreign individual or corporation?};\n    D -- Yes --> E{Making payments subject to UFT or receiving benefits from UFT regime?};\n    E -- Yes --> F[Potentially Applicable Person];\n    E -- No --> G[Likely Not an Applicable Person based on this path];\n    D -- No --> H{Other entity specified by Treasury?};\n    H -- Yes --> I[Potentially Applicable Person];\n    H -- No --> J[Likely Not an Applicable Person based on this path];\n    C --> K[End Assessment];\n    F --> K;\n    G --> K;\n    I --> K;\n    J --> K;"
+        },
+        {
+          "type": "placeholder_item",
+          "text": "<strong>\"Is this an Unfair Foreign Tax?\" Checklist:</strong> (Interactive checklist) <div class=\"checklist-placeholder\">[Checklist: Unfair Foreign Tax Criteria]</div>"
+        },
+        {
+          "type": "placeholder_item",
+          "text": "<strong>Country Designation Timeline Selector:</strong> (Interactive timeline/selector) <div class=\"timeline-placeholder\">[Timeline: Country Designation Dates]</div>"
+        }
+      ]
+    },
+    {
+      "id": "regulatory-guidance",
+      "title": "2.7 Regulatory Guidance & Future Changes",
+      "content": [
+        {
+          "type": "list",
+          "items": [
+            "<strong>Treasury's Role:</strong> Responsible for issuing a quarterly list of discriminatory foreign countries and providing guidance.",
+            "<strong>Congressional Notification:</strong> Treasury must notify Congress of designations.",
+            "<strong>Authority for Exceptions:</strong> Treasury may have authority to grant additional exceptions or issue anti-avoidance rules.",
+            "<strong>Interaction with Treaties and FTCs:</strong> Complex interactions with existing tax treaties and foreign tax credit mechanisms will require careful consideration and specific guidance."
+          ]
+        }
+      ]
+    }
+  ],
+  "disclaimer": "<strong>Disclaimer:</strong> This is a simplified overview for educational purposes. The actual application of Section 899, if it were real legislation, would be highly complex and fact-specific. Always consult with a qualified tax professional."
+}

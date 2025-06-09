@@ -1,0 +1,54 @@
+{
+  "faqs": [
+    {
+      "category": "general",
+      "question": "What does \u00a7899 do in a nutshell?",
+      "answer": "It increases specified U.S. tax rates on income connected to persons from \u2018discriminatory foreign countries\u2019\u2014jurisdictions that levy unfair taxes such as UTPRs or DSTs. The surcharge starts at +5 percentage points in year\u202f1 and can rise to +20\u202fpp."
+    },
+    {
+      "category": "general",
+      "question": "Who is an \u2018applicable person\u2019 under \u00a7899?",
+      "answer": "Non\u2011U.S. individuals or entities that are tax\u2011resident in a discriminatory country, certain branches and trusts, and foreign corporations more than 50\u202f% owned by such persons. U.S.-owned CFCs are generally excluded."
+    },
+    {
+      "category": "general",
+      "question": "Which U.S. taxes can be surcharged?",
+      "answer": "Income tax on effectively connected income, taxes on non\u2011resident aliens (\u00a7871), foreign corporations (\u00a7881), branch\u2011profits tax (\u00a7884), and withholding under \u00a7\u00a71441\u20111445. For some taxpayers, BEAT (\u00a759A) parameters are also tightened."
+    },
+    {
+      "category": "general",
+      "question": "How fast do the rates increase?",
+      "answer": "Year\u202f1 after a country\u2019s applicable date: +5\u202fpp. Each annual anniversary adds another +5\u202fpp, up to a +20\u202fpp ceiling."
+    },
+    {
+      "category": "technical",
+      "question": "How does \u00a7899 interact with BEAT?",
+      "answer": "For companies tied to a discriminatory country, \u00a7899 treats them as having base\u2011erosion payments, removes the 10\u202f% QBAI offset, and raises the BEAT rate to 12.5\u202f%."
+    },
+    {
+      "category": "technical",
+      "question": "Does the \u00a7899 surcharge qualify for a foreign tax credit?",
+      "answer": "Uncertain. Because \u00a7899 increases U.S. tax rather than foreign tax, it is unlikely to be creditable. Treasury guidance will be decisive."
+    },
+    {
+      "category": "technical",
+      "question": "How is the \u2018applicable date\u2019 determined in practice?",
+      "answer": "Treasury will publish a quarterly list. The date is based on when the unfair tax is enacted or becomes effective, subject to 90\u2011/180\u2011day buffers in \u00a7899(a)(4)(C)."
+    },
+    {
+      "category": "technical",
+      "question": "What if a country repeals its unfair tax?",
+      "answer": "The surcharge stops for taxable years beginning after the last date on which the unfair tax applies, per \u00a7899(a)(5)(A). Treasury will update the list accordingly."
+    },
+    {
+      "category": "compliance",
+      "question": "Is there a penalty\u2011free grace period for withholding agents?",
+      "answer": "Yes. No penalties or interest apply on failures to withhold before 1\u202fJan\u202f2027 if the agent shows best\u2011effort compliance (\u00a7899(a)(5)(D))."
+    },
+    {
+      "category": "compliance",
+      "question": "How do I know if my counterparty is an applicable person?",
+      "answer": "Due diligence will require obtaining residency and ownership representations, similar to treaty\u2011benefit or FATCA procedures. Regulations will specify acceptable documentation."
+    }
+  ]
+}

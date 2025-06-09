@@ -1,0 +1,108 @@
+<!-- pages/impact_estimator.html -->
+<div class="page-content">
+    <h1>Impact Estimator</h1>
+    <p>This tool provides a simplified, illustrative estimation of the potential impact of Section 899 based on hypothetical scenarios. It is for educational purposes only and should <strong>not</strong> be considered financial or legal advice.</p>
+
+    <section id="estimator-form-section" class="card">
+        <h2>3.1 Input Section</h2>
+        <form id="impact-estimator-form">
+            <div class="form-group">
+                <label for="entity-type">Entity Type:</label>
+                <select id="entity-type" name="entity-type">
+                    <option value="corporation">Corporation</option>
+                    <option value="individual">Individual</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="country-import">Country of Import/Transaction:</label>
+                <select id="country-import" name="country-import">
+                    <option value="">-- Select a Country --</option>
+                    <!-- Options to be populated from tax_data.json or dynamically -->
+                    <option value="country_a">Country A (Example from tax_data.json)</option>
+                    <option value="country_b">Country B (Example from tax_data.json)</option>
+                    <option value="country_c">Country C (Example from tax_data.json)</option>
+                    <option value="other_country">Other (Not Listed)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="taxable-amount">Taxable Amount (USD):</label>
+                <input type="number" id="taxable-amount" name="taxable-amount" placeholder="e.g., 100000" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tax-year">Tax Year:</label>
+                <input type="number" id="tax-year" name="tax-year" placeholder="e.g., 2025" value="2025">
+            </div>
+
+            <div class="form-group">
+                <label for="applicable-date">Applicable Date / Year for §899 Rate:</label>
+                <input type="number" id="applicable-date" name="applicable-date" placeholder="e.g., 2025" value="2025">
+                <small>This determines the surcharge ramp-up percentage.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="country-status">Country Status for §899:</label>
+                <select id="country-status" name="country-status">
+                    <option value="listed">Designated as Discriminatory</option>
+                    <option value="hypothetical">Hypothetically Discriminatory</option>
+                    <option value="not_listed">Not Listed / Not Discriminatory</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="scenario-preset">Scenario Preset:</label>
+                <select id="scenario-preset" name="scenario-preset">
+                    <option value="none">None (Custom Input)</option>
+                    <option value="dst">Digital Services Tax (DST) Scenario</option>
+                    <option value="utpr">Unfair Tax Practice (UTPR-like) Scenario</option>
+                    <option value="extraterritorial">Extraterritorial Tax Scenario</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="special-circumstances">Special Circumstances (Optional):</label>
+                <textarea id="special-circumstances" name="special-circumstances" rows="3" placeholder="Briefly describe any special conditions, e.g., treaty benefits claimed, specific industry."></textarea>
+            </div>
+
+            <button type="submit">Calculate Estimated Impact</button>
+        </form>
+    </section>
+
+    <section id="results-section" class="card">
+        <h2>3.2 Results Section</h2>
+        <div id="calculator-results">
+            <p>Your estimated impact will be displayed here after submitting the form. This will include:</p>
+            <ul>
+                <li>Base tax amount (hypothetical, before §899).</li>
+                <li>Calculated Section 899 adjustment/increase.</li>
+                <li>Total estimated tax due (hypothetical, with §899).</li>
+                <li>A brief explanation of the calculation based on inputs.</li>
+                <li>Suggested next steps or considerations (educational).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="examples-section" class="card">
+        <h2>3.3 Examples</h2>
+        <div class="example-item">
+            <h3>Worked Example 1: French DST Surcharge Timeline</h3>
+            <p>This example will illustrate how the §899 surcharge might apply to a company paying French Digital Services Tax, considering the ramp-up of the applicable percentage points over several years.</p>
+            <p><em>(Detailed scenario, inputs, and step-by-step calculation will be presented here.)</em></p>
+        </div>
+        <div class="example-item">
+            <h3>Worked Example 2: Extraterritorial Tax Failing Carve-Outs</h3>
+            <p>This scenario will demonstrate the impact on a U.S. company subject to a foreign tax deemed extraterritorial by U.S. standards and failing any available carve-outs under §899.</p>
+            <p><em>(Detailed scenario, inputs, and step-by-step calculation will be presented here.)</em></p>
+        </div>
+        <div class="example-item">
+            <h3>Worked Example 3: UTPR Impact under BEAT Overlay</h3>
+            <p>This example will explore a hypothetical Undertaxed Profits Rule (UTPR) scenario where the §899 provisions interact with or modify the Base Erosion and Anti-abuse Tax (BEAT) for a U.S. corporation.</p>
+            <p><em>(Detailed scenario, inputs, and step-by-step calculation will be presented here.)</em></p>
+        </div>
+    </section>
+
+    <p class="disclaimer"><strong>Important:</strong> Calculations are based on simplified assumptions and placeholder data. They do not reflect the full complexity of Section 899 or actual tax liabilities. Always consult with a qualified professional for advice relevant to your specific situation.</p>
+</div>

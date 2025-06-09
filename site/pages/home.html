@@ -1,0 +1,122 @@
+<!-- pages/home.html -->
+<div class="page-content" id="home-content">
+    <!-- Loading indicator -->
+    <div id="loading-indicator" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3">Loading content...</p>
+    </div>
+
+    <!-- Content will be dynamically inserted here -->
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Home page script started. Attempting to fetch home_content.json...');
+    fetch('/data/home_content.json') // Changed to root-relative path
+        .then(response => {
+            console.log('Fetch response received:', response);
+            if (!response.ok) {
+                throw new Error(`Network response was not ok. Status: ${response.status} ${response.statusText}`);
+            }
+            return response.json().then(jsonData => {
+                console.log('Successfully parsed home_content.json:', jsonData);
+                return jsonData;
+            });
+        })
+        .then(data => {
+            renderHomePage(data);
+        })
+        .catch(error => {
+            console.error('Error loading or processing home content:', error);
+            const contentDiv = document.getElementById('home-content');
+            contentDiv.innerHTML = `
+                <div class="alert alert-danger">
+                    <h3>Error Loading Content</h3>
+                    <p>We're having trouble loading the content. Please try refreshing the page or check back later.</p>
+                    <p>Error details: ${error.message}</p>
+                </div>`;
+        });
+
+    function renderHomePage(data) {
+        console.log('renderHomePage function called with data:', data);
+        const contentDiv = document.getElementById('home-content');
+        
+        // Start building the HTML
+        let html = `
+            <!-- 1.1 Hero Section -->
+            <section class="hero-section card">
+                <h1>${data.hero.title}</h1>
+                <p class="lead">${data.hero.lead}</p>
+                <p>${data.hero.description}</p>
+                <div class="quick-nav-hero">
+                    ${data.hero.cta.map(btn => 
+                        `<a href="${btn.url}" class="btn ${btn.class}">${btn.text}</a>`
+                    ).join('\n')}
+                </div>
+            </section>
+
+            <!-- 1.2 Key Points -->
+            <section class="key-points">
+                <h2>Key Aspects of Section 899</h2>
+                <div class="card-deck">
+                    ${data.keyPoints.map(point => `
+                        <div class="card">
+                            <h3>${point.title}</h3>
+                            <p>${point.content}</p>
+                        </div>
+                    `).join('\n')}
+                </div>
+            </section>
+
+            <!-- 1.3 Content Sections -->
+            ${data.sections.map(section => `
+                <section id="${section.id}" class="content-section card">
+                    <h2>${section.title}</h2>
+                    ${section.content ? `<p>${section.content}</p>` : ''}
+                    ${section.items ? `
+                        ${(section.items && section.items.length > 0 && typeof section.items[0] === 'object' && section.items[0] !== null) ? `
+                            <dl class="definition-list">
+                                ${section.items.map(item => `
+                                    <dt>${item.term || 'N/A'}</dt>
+                                    <dd>${item.definition || 'N/A'}</dd>
+                                `).join('\n')}
+                            </dl>
+                        ` : (section.items && section.items.length > 0) ? `
+                            <ul>
+                                ${section.items.map(item => `<li>${item}</li>`).join('\n')}
+                            </ul>
+                        ` : ''}
+                    ` : ''}
+                </section>
+            `).join('\n')}
+
+            <!-- 1.4 Quick Links -->
+            <section class="quick-links-section card">
+                <h2>Discover More</h2>
+                <ul>
+                    ${data.quickLinks.map(link => `
+                        <li><a href="${link.url}">${link.title}</a></li>
+                    `).join('\n')}
+                </ul>
+            </section>
+
+            <p class="disclaimer"><strong>Disclaimer:</strong> ${data.disclaimer}</p>`;
+
+        console.log('Constructed HTML for home page. Attempting to set innerHTML.');
+        // Insert the HTML
+        contentDiv.innerHTML = html;
+        console.log('innerHTML set for home-content.');
+
+        // Add any dynamic behaviors here if needed
+        initializeHomePage();
+    }
+
+
+    function initializeHomePage() {
+        // Initialize any interactive elements here
+        console.log('Home page initialized');
+    }
+});
+</script>

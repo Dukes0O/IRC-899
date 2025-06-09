@@ -1,0 +1,82 @@
+{
+  "countries": [
+    {
+      "id": "FRA",
+      "name": "France",
+      "base_corporate_rate": 0.25,
+      "unfair_tax_types": [
+        "DST"
+      ],
+      "dst_rate": 0.03,
+      "utpr_status": "Adopted (effective 2024)",
+      "designation_status": "Potential",
+      "applicable_date": null,
+      "current_applicable_percentage_points": 0,
+      "notes": "France levies a 3\u202f% DST on digital\u2011services revenue and will apply the OECD UTPR; it may be listed once \u00a7899 is enacted."
+    },
+    {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "base_corporate_rate": 0.25,
+      "unfair_tax_types": [
+        "DST",
+        "DPT"
+      ],
+      "dst_rate": 0.02,
+      "dpt_rate": 0.25,
+      "utpr_status": "Adopted (legislation enacted 2023)",
+      "designation_status": "Potential",
+      "applicable_date": null,
+      "current_applicable_percentage_points": 0,
+      "notes": "UK imposes a 2\u202f% DST and a 25\u202f% Diverted Profits Tax."
+    },
+    {
+      "id": "ITA",
+      "name": "Italy",
+      "base_corporate_rate": 0.24,
+      "unfair_tax_types": [
+        "DST"
+      ],
+      "dst_rate": 0.03,
+      "utpr_status": "Expected 2025",
+      "designation_status": "Potential",
+      "applicable_date": null,
+      "current_applicable_percentage_points": 0,
+      "notes": "Italy\u2019s 3\u202f% DST applies above \u20ac750\u202fm global revenue."
+    },
+    {
+      "id": "IND",
+      "name": "India",
+      "base_corporate_rate": 0.22,
+      "unfair_tax_types": [
+        "Equalisation Levy (DST\u2011like)"
+      ],
+      "equalisation_levy_rate": 0.02,
+      "utpr_status": "Expected 2025",
+      "designation_status": "Potential",
+      "applicable_date": null,
+      "current_applicable_percentage_points": 0,
+      "notes": "India\u2019s equalisation levy functions similarly to a DST."
+    },
+    {
+      "id": "CAN",
+      "name": "Canada",
+      "base_corporate_rate": 0.265,
+      "unfair_tax_types": [],
+      "dst_status": "Proposed (not yet in force)",
+      "utpr_status": "Expected 2026",
+      "designation_status": "Not currently discriminatory",
+      "applicable_date": null,
+      "current_applicable_percentage_points": 0,
+      "notes": "Canada has proposed a 3\u202f% DST but has not implemented it yet."
+    }
+  ],
+  "default_assumptions": {
+    "average_us_corporate_rate": 0.21,
+    "withholding_rates": {
+      "FDAP_standard": 0.3,
+      "FDAP_treaty_average": 0.15
+    },
+    "currency": "USD"
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 899 - Legislative Text | Section 899 Educational Tool</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        .legislation-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section-header {
+            margin-top: 2em;
+            padding-bottom: 0.5em;
+            border-bottom: 2px solid #0056b3;
+        }
+        .subsection {
+            margin-left: 1.5em;
+            margin-top: 1.5em;
+        }
+        .paragraph {
+            margin-left: 3em;
+            margin-top: 1em;
+        }
+        .clause {
+            margin-left: 4.5em;
+            margin-top: 0.8em;
+        }
+        .rate-schedule {
+            margin: 1em 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .rate-schedule th, .rate-schedule td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .rate-schedule th {
+            background-color: #f2f2f2;
+        }
+        .footnotes {
+            margin-top: 3em;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 1em;
+        }
+        .print-button {
+            margin: 20px 0;
+            padding: 10px 15px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .print-button:hover {
+            background-color: #003d82;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            body {
+                font-size: 12pt;
+                line-height: 1.3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="legislation-container">
+        <button onclick="window.print()" class="print-button no-print">Print This Page</button>
+        
+        <h1>Internal Revenue Code</h1>
+        <h2>Section 899. Modification of Tax Treatment of Persons Connected With Discriminatory Foreign Jurisdictions</h2>
+        
+        <div id="legislation-content">
+            <!-- Content will be dynamically loaded here -->
+            <p>Loading legislation content...</p>
+        </div>
+        
+        <div class="footnotes">
+            <p><strong>Note:</strong> This document is for educational purposes only and does not constitute legal or tax advice.</p>
+            <p>Last updated: June 8, 2025</p>
+        </div>
+    </div>
+
+
+    <!-- Script content moved to js/legislation.js -->
+    
+    <!-- Include the glossary links script -->
+    <script src="../js/glossary-links.js"></script>
+</body>
+</html>

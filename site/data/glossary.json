@@ -1,0 +1,128 @@
+{
+  "keyTerms": [
+    {
+      "term": "Applicable Person",
+      "definition": "A foreign individual, entity, trust, or government connected to a discriminatory foreign country as defined in \u00a7899(b)(1). Includes non\u2011U.S. individuals tax\u2011resident in that country; foreign corporations resident there (unless U.S.-owned CFCs); foreign corporations >50\u202f% owned by such persons; certain trusts; branches; and other entities Treasury may specify."
+    },
+    {
+      "term": "Discriminatory Foreign Country",
+      "definition": "Any foreign jurisdiction that imposes one or more *unfair foreign taxes* within the meaning of \u00a7899(d)(1). Treasury will list qualifying countries in quarterly guidance."
+    },
+    {
+      "term": "Unfair Foreign Tax",
+      "definition": "A foreign tax regime that disproportionately burdens U.S. persons, including an Undertaxed Profits Rule (UTPR), Digital Services Tax (DST), Diverted Profits Tax (DPT), or other extraterritorial/discriminatory taxes identified by Treasury. See \u00a7899(c)(1)."
+    },
+    {
+      "term": "Applicable Date",
+      "definition": "The first day of the first calendar year beginning on or after the latest of (i) 90\u202fdays after enactment of \u00a7899, (ii) 180\u202fdays after the unfair tax is enacted, or (iii) the date the unfair tax begins to apply. Rate surcharges ramp from this date. \u00a7899(a)(4)(C)."
+    },
+    {
+      "term": "Applicable Percentage Points",
+      "definition": "The rate\u2011increase factor applied to specified U.S. tax rates on payments to applicable persons. Year\u202f1: +5\u202fpp; each anniversary: additional +5\u202fpp; capped at +20\u202fpp. \u00a7899(a)(4)(A)\u2013(B)."
+    },
+    {
+      "term": "Base Erosion and Anti\u2011Abuse Tax (BEAT)",
+      "definition": "A minimum tax on certain large corporations that make deductible payments to foreign related parties (\u00a759A). \u00a7899(a)(2) modifies BEAT rules for corporations connected to discriminatory countries, raising the rate to 12.5\u202f% and removing key exceptions."
+    },
+    {
+      "term": "Undertaxed Profits Rule (UTPR)",
+      "definition": "A top\u2011up tax under OECD Pillar Two that allocates residual tax liability to entities in jurisdictions where group income is undertaxed. Listed as an \u2018unfair foreign tax\u2019 in \u00a7899(c)(1)."
+    },
+    {
+      "term": "Digital Services Tax (DST)",
+      "definition": "A gross\u2011basis tax on digital advertising, marketplace, or user\u2011interface revenues, typically imposed on non\u2011resident tech companies (e.g., France 3\u202f%, UK 2\u202f%). Identified as an unfair foreign tax in \u00a7899(c)(1)."
+    },
+    {
+      "term": "Diverted Profits Tax (DPT)",
+      "definition": "A tax that targets perceived profit\u2011shifting by multinationals (e.g., UK DPT 25\u202f%). Explicitly treated as an unfair foreign tax in \u00a7899(c)(1)."
+    },
+    {
+      "term": "Extraterritorial Tax",
+      "definition": "A foreign tax determined by reference to income or profits of entities outside the taxing country, other than by direct ownership. See \u00a7899(c)(2)."
+    },
+    {
+      "term": "Discriminatory Tax (foreign)",
+      "definition": "A tax that meets any of the criteria in \u00a7899(c)(3), such as applying chiefly to non\u2011residents or being levied on a base other than net income without cost recovery."
+    },
+    {
+      "term": "FIRPTA Items",
+      "definition": "Gains and losses on U.S. real\u2011property interests recognized by a non\u2011resident and taxed as effectively connected income under \u00a7897(a). Relevant for the \u00a7899(a)(1)(C) limitation."
+    },
+    {
+      "term": "Qualified Business Asset Investment (QBAI)",
+      "definition": "The depreciable tangible\u2011asset base used in calculating a routine return under GILTI and BEAT. \u00a7899(a)(2) eliminates QBAI relief for affected taxpayers."
+    },
+    {
+      "term": "Foreign Tax Credit (FTC)",
+      "definition": "A U.S. tax credit for foreign income taxes. It is presently uncertain whether \u00a7899 surcharges will be creditable; Treasury guidance is anticipated."
+    },
+    {
+      "term": "Safe Harbor for Withholding Agents",
+      "definition": "Temporary relief under \u00a7899(a)(5)(D): no penalties or interest on failures to withhold before 1\u202fJan\u202f2027 if best efforts are demonstrated."
+    },
+    {
+      "term": "Section\u00a0899 Surcharge",
+      "definition": "The incremental rate increase applied to specified U.S. income and withholding taxes payable by or attributable to applicable persons from discriminatory countries."
+    }
+  ],
+  "acronyms": [
+    {
+      "acronym": "BEAT",
+      "expansion": "Base Erosion and Anti\u2011Abuse Tax"
+    },
+    {
+      "acronym": "DST",
+      "expansion": "Digital Services Tax"
+    },
+    {
+      "acronym": "DPT",
+      "expansion": "Diverted Profits Tax"
+    },
+    {
+      "acronym": "FTC",
+      "expansion": "Foreign Tax Credit"
+    },
+    {
+      "acronym": "FIRPTA",
+      "expansion": "Foreign Investment in Real Property Tax Act"
+    },
+    {
+      "acronym": "IRC",
+      "expansion": "Internal Revenue Code"
+    },
+    {
+      "acronym": "IRS",
+      "expansion": "Internal Revenue Service"
+    },
+    {
+      "acronym": "QBAI",
+      "expansion": "Qualified Business Asset Investment"
+    },
+    {
+      "acronym": "UTPR",
+      "expansion": "Undertaxed Profits Rule"
+    }
+  ],
+  "relatedLegislation": [
+    {
+      "term": "IRC \u00a759A",
+      "description": "Base Erosion and Anti\u2011Abuse Tax (BEAT); modified by \u00a7899(a)(2)."
+    },
+    {
+      "term": "IRC \u00a7\u00a7871, 881, 1441\u20111442",
+      "description": "U.S. withholding tax rules on U.S.\u2011source FDAP income; rates increased for applicable persons."
+    },
+    {
+      "term": "IRC \u00a7\u00a7897, 1445",
+      "description": "FIRPTA regime on U.S. real\u2011property interests; \u00a7899 increases withholding under \u00a71445."
+    },
+    {
+      "term": "OECD Pillar Two Model Rules",
+      "description": "Global minimum\u2011tax framework introducing UTPR, expressly targeted by \u00a7899."
+    },
+    {
+      "term": "OECD Inclusive Framework DST guidance",
+      "description": "International negotiations on digital\u2011services taxation relevant to unfair\u2011tax designation."
+    }
+  ]
+}

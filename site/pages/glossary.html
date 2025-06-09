@@ -1,0 +1,61 @@
+<!-- pages/glossary.html -->
+<div class="page-content">
+    <h1>Glossary of Terms</h1>
+    <p>This glossary provides definitions for key terms, acronyms, and concepts related to Section 899 and relevant areas of tax and trade law. The terms are loaded dynamically from <code>data/glossary.json</code>. The structure below outlines the categories of terms you will find.</p>
+
+    <section id="key-terms-section" class="card">
+        <h2>4.1 Key Terms</h2>
+        <p>Detailed definitions for fundamental concepts within Section 899, such as:</p>
+        <ul>
+            <li>Applicable Person</li>
+            <li>Discriminatory Foreign Country</li>
+            <li>Unfair Foreign Tax</li>
+            <li>Applicable Percentage Points</li>
+            <li>Applicable Date</li>
+            <li>Special Mechanics (e.g., BEAT Overlay details)</li>
+        </ul>
+        <div id="glossary-key-terms-container">
+            <!-- Terms will be loaded here by JavaScript from data/glossary.json -->
+            <p class="loading-message">Loading key terms...</p>
+        </div>
+    </section>
+
+    <section id="acronyms-section" class="card">
+        <h2>4.2 Acronyms and Abbreviations</h2>
+        <p>Common acronyms used in discussions of Section 899 and related tax law, including:</p>
+        <ul>
+            <li>DST (Digital Services Tax)</li>
+            <li>DPT (Diverted Profits Tax)</li>
+            <li>BEAT (Base Erosion and Anti-abuse Tax)</li>
+            <li>FIRPTA (Foreign Investment in Real Property Tax Act)</li>
+            <!-- Add more as defined in glossary.json -->
+        </ul>
+        <div id="glossary-acronyms-container">
+            <!-- Acronyms will be loaded here by JavaScript from data/glossary.json -->
+            <p class="loading-message">Loading acronyms...</p>
+        </div>
+    </section>
+
+    <section id="related-legislation-section" class="card">
+        <h2>4.3 Related Legislation</h2>
+        <p>Brief explanations of other U.S. Internal Revenue Code sections or concepts that may interact with or provide context for Section 899, such as:</p>
+        <ul>
+            <li>Section 245A (Participation Exemption)</li>
+            <li>Section 250 (FDII and GILTI Deductions)</li>
+            <li>Section 951A (GILTI)</li>
+            <!-- Add more as defined in glossary.json -->
+        </ul>
+        <div id="glossary-related-legislation-container">
+            <!-- Related legislation will be loaded here by JavaScript from data/glossary.json -->
+            <p class="loading-message">Loading related legislation...</p>
+        </div>
+    </section>
+
+    <p>If a term you are looking for is not found, please consider it may be covered within the main content pages or is outside the direct scope of this educational tool's current version.</p>
+
+    <p class="disclaimer"><strong>Disclaimer:</strong> Definitions are provided for educational purposes and are simplified. They should not be relied upon as legal or tax advice.</p>
+
+    <!-- Note: The actual JavaScript logic for loading data is in js/glossary.js (or handled by js/navigation.js and page-specific init). -->
+    <!-- The inline script previously here has been removed to centralize JS logic. -->
+    <!-- Ensure your main JS or navigation handler calls an appropriate function to populate these sections. -->
+</div>
